@@ -357,7 +357,7 @@ export const checkStatus = async (noPendaftaran: string) => {
 export const loginAdmin = async (username: string, password: string) => {
   if (!GAS_WEB_APP_URL) {
     await new Promise(resolve => setTimeout(resolve, 800));
-    if (username === 'admin' && password === 'admin123') {
+    if (username === 'admin' && password === 'adminsd123') {
       return { status: "success" };
     }
     return { status: "error", message: "Username atau password salah" };
